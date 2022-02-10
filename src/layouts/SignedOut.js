@@ -1,13 +1,17 @@
-import React from 'react';
-import { Button, Menu } from 'semantic-ui-react';
+import React from "react";
+import { Button, Menu } from "semantic-ui-react";
 
-export default function SignedOut({signIn}) {
-  return <div>
-    <Menu.Item>
-        <Button grey onClick={signIn}>Login</Button>
-        <Button primary style={{marginLeft:"0.5em"}}>Register</Button>
-    </Menu.Item>
-    
-    
-  </div>;
+export default function SignedOut({ signIn }) {
+  return (
+    <div>
+      <Menu.Item>
+        <Button grey onClick={signIn}>
+          Login
+        </Button>
+        <Button primary style={{ marginLeft: "0.5em" }}>
+          Register
+        </Button>
+      </Menu.Item>
+    </div>
+  );
 }
